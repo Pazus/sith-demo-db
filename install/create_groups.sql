@@ -33,9 +33,9 @@ declare
       end;
     end;
 begin
-  create_group(null, 7);
-  create_group(null, 7);
-  create_group(null, 7);
+    for i in 1..25 loop
+        create_group(null, 7);
+    end loop;
 end;
 /
 

@@ -1,0 +1,1 @@
+create or replace type t_number_type is table of number;

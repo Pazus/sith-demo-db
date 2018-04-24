@@ -14,7 +14,7 @@ create or replace package body ut_groups as
   as
     begin
       check_group_names(-3, '1st Fire team', '1st Fire team of 1st Squad of 1st Platoon');
-      check_group_names(-4, 'utPLSLQ team', '2nd Fire team of 1st Squad of 1st Platoon');
+      check_group_names(-4, 'utPLSQL team', '2nd Fire team of 1st Squad of 1st Platoon');
       check_group_names(-5, '3rd Fire team', '3rd Fire team of 1st Squad of 1st Platoon');
     end;
 

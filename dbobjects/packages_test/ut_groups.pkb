@@ -14,7 +14,7 @@ create or replace package body ut_groups as
   as
     begin
       check_group_names(-3, '1st Fire team', '1st Fire team of 1st Squad of 1st Platoon');
-      check_group_names(-4, 'utPLSLQ team', '2nd Fire team of 1st Squad of 1st Platoon');
+      check_group_names(-4, 'utPLSQL team', '2nd Fire team of 1st Squad of 1st Platoon');
       check_group_names(-5, '3rd Fire team', '3rd Fire team of 1st Squad of 1st Platoon');
     end;
 
@@ -31,7 +31,7 @@ create or replace package body ut_groups as
       insert into groups (id, group_type_fk, parent_fk, honor_name) values (-1, 3, null, null);
       insert into groups (id, group_type_fk, parent_fk, honor_name) values (-2, 2, -1, null);
       insert into groups (id, group_type_fk, parent_fk, honor_name) values (-3, 1, -2, null);
-      insert into groups (id, group_type_fk, parent_fk, honor_name) values (-4, 1, -2, 'utPLSQL team');
+      insert into groups (id, group_type_fk, parent_fk, honor_name) values (-4, 1, -2, 'utPLSLQ team');
       insert into groups (id, group_type_fk, parent_fk, honor_name) values (-5, 1, -2, null);
 
     end;
